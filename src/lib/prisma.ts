@@ -1,21 +1,39 @@
-// ts-ignore 7017 is used to ignore the error that the global object is not
-// defined in the global scope. This is because the global object is only
-// defined in the global scope in Node.js and not in the browser.
-
 import { PrismaClient } from "@prisma/client";
 import { withOptimize } from "@prisma/extension-optimize";
 
-// PrismaClient is attached to the `global` object in development to prevent
-// exhausting your database connection limit.
-//
-// Learn more:
-// https://pris.ly/d/help/next-js-best-practices
+/**
+ * The singleton instance of a PrismaClient with the `withOptimize` optimization
+ * and a custom computed field on the `User` model.
+ *
+ * @returns {PrismaClient} The singleton instance of a PrismaClient with the
+ * `withOptimize` optimization and the custom computed field on the `User`
+ * model.
+ */
+const prismaClientSingleton = () => {
+  return new PrismaClient().$extends(withOptimize()).$extends({
+    result: {
+      user: {
+        fullName: {
+          needs: { firstName: true, lastName: true },
+          compute(user) {
+            return `${user.firstName} ${user.lastName}`;
+          },
+        },
+      },
+    },
+  });
+};
 
-const globalForPrisma = global as unknown as { prisma: PrismaClient };
+declare const globalThis: {
+  /**
+   * The global singleton instance of the optimized PrismaClient. This is
+   * lazily initialized and memoized to prevent multiple instances of the
+   * PrismaClient from being created.
+   */
+  prismaGlobal: ReturnType<typeof prismaClientSingleton>;
+} & typeof global;
 
-export const prisma =
-  globalForPrisma.prisma || new PrismaClient().$extends(withOptimize());
-
-if (process.env.NODE_ENV !== "production") globalForPrisma.prisma = prisma;
-
+const prisma = globalThis.prismaGlobal ?? prismaClientSingleton();
 export default prisma;
+
+if (process.env.NODE_ENV !== "production") globalThis.prismaGlobal = prisma;
