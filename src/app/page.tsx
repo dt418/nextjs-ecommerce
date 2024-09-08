@@ -1,21 +1,11 @@
-import { isUserAuthenticated } from "@/utils/auth";
-import {
-  LoginLink,
-  LogoutLink,
-  RegisterLink,
-} from "@kinde-oss/kinde-auth-nextjs/components";
+import HeroBlock from "./components/HeroBlock";
+import Features from "./components/Features";
 
 export default async function Home() {
   return (
     <main className="m-auto max-w-[1440px]">
-      {isUserAuthenticated ? (
-        <LogoutLink>Logout</LogoutLink>
-      ) : (
-        <>
-          <LoginLink>Login</LoginLink>
-          <RegisterLink>Register</RegisterLink>
-        </>
-      )}
+      <HeroBlock />
+      <Features />
     </main>
   );
 }
