@@ -24,17 +24,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+
       - name: Install Bun
         run: |
           curl -fsSL https://bun.sh/install | bash
           echo "BUN_INSTALL=/home/runner/.bun" >> $GITHUB_ENV
           echo "PATH=/home/runner/.bun/bin:$PATH" >> $GITHUB_ENV
         shell: bash
-      
+
       - name: Add Bun to PATH
         run: echo "PATH=/home/runner/.bun/bin:$PATH" >> $GITHUB_ENV
-      
+
       - name: Verify Bun Installation
         run: bun --version
 
@@ -55,6 +55,14 @@ jobs:
         run: bun install
 
       - name: Build with Next.js
+        env:
+          DATABASE_URL: ${{ env.DATABASE_URL }}
+          KINDE_CLIENT_ID: ${{ env.KINDE_CLIENT_ID }}
+          KINDE_CLIENT_SECRET: ${{ env.KINDE_CLIENT_SECRET }}
+          KINDE_ISSUER_URL: ${{ env.KINDE_ISSUER_URL }}
+          KINDE_SITE_URL: ${{ env.KINDE_SITE_URL }}
+          KINDE_POST_LOGOUT_REDIRECT_URL: ${{ env.KINDE_POST_LOGOUT_REDIRECT_URL }}
+          KINDE_POST_LOGIN_REDIRECT_URL: ${{ env.KINDE_POST_LOGIN_REDIRECT_URL }}
         run: bun run next build
 
       - name: Upload artifact
