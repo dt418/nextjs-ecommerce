@@ -9,7 +9,7 @@ import React from "react";
  */
 function HeroBlock() {
   return (
-    <section className="flex max-w-[1440px] relative overflow-hidden bg-[url('hero-block.png')] bg-cover bg-no-repeat bg-center justify-end md:h-full items-center md:py-[130px] sm:pb-[50%] pb-[75%]">
+    <section className="flex max-w-[1440px] relative overflow-hidden bg-[url('hero-block.webp')] bg-cover bg-no-repeat bg-center justify-end md:h-full items-center md:py-[130px] sm:pb-[50%] pb-[75%]">
       <div className="flex flex-col md:max-w-[630px] overflow-hidden bg-white/75 p-6 md:px-14 md:py-12 m-0 md:mr-[80px] gap-8">
         <div className="flex flex-col justify-start gap-5">
           <h2 className="text-[32px] text-left text-[#22202e]">
