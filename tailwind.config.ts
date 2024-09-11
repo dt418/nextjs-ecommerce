@@ -21,6 +21,20 @@ const config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontSize: {
+        // Headline Styles
+        "headline-one": ["36pt", { lineHeight: "1.5" }], // 150% line height
+        "headline-two": ["32pt", { lineHeight: "1.5" }],
+        "headline-three": ["24pt", { lineHeight: "1.5" }],
+        "headline-four": ["20pt", { lineHeight: "1.5" }],
+        "headline-five": ["16pt", { lineHeight: "1.5" }],
+        "headline-six": ["14pt", { lineHeight: "1.5" }],
+
+        // Body Text Styles
+        "body-small": ["14pt", { lineHeight: "1.5" }],
+        "body-medium": ["16pt", { lineHeight: "1.5" }],
+        "body-large": ["18pt", { lineHeight: "1.5" }],
+      },
     },
   },
   plugins: [],
