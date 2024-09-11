@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+import { fontFamily } from "tailwindcss/defaultTheme";
 const config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,6 +8,10 @@ const config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        satoshi: ["var(--font-satoshi)", ...fontFamily.sans],
+        "clash-display": ["var(--font-clash-display)", ...fontFamily.serif],
+      },
       colors: {
         "dark-primary": "#2A254B",
         primary: "#4E4D93",
@@ -23,17 +27,17 @@ const config = {
       },
       fontSize: {
         // Headline Styles
-        "headline-one": ["36pt", { lineHeight: "1.5" }], // 150% line height
-        "headline-two": ["32pt", { lineHeight: "1.5" }],
-        "headline-three": ["24pt", { lineHeight: "1.5" }],
-        "headline-four": ["20pt", { lineHeight: "1.5" }],
-        "headline-five": ["16pt", { lineHeight: "1.5" }],
-        "headline-six": ["14pt", { lineHeight: "1.5" }],
+        "headline-one": ["36px", { lineHeight: "1.5" }], // 150% line height
+        "headline-two": ["32px", { lineHeight: "1.5" }],
+        "headline-three": ["24px", { lineHeight: "1.5" }],
+        "headline-four": ["20px", { lineHeight: "1.5" }],
+        "headline-five": ["16px", { lineHeight: "1.5" }],
+        "headline-six": ["14px", { lineHeight: "1.5" }],
 
         // Body Text Styles
-        "body-small": ["14pt", { lineHeight: "1.5" }],
-        "body-medium": ["16pt", { lineHeight: "1.5" }],
-        "body-large": ["18pt", { lineHeight: "1.5" }],
+        "body-small": ["14px", { lineHeight: "1.5" }],
+        "body-medium": ["16px", { lineHeight: "1.5" }],
+        "body-large": ["18px", { lineHeight: "1.5" }],
       },
     },
   },

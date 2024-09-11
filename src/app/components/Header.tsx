@@ -6,7 +6,7 @@ import IconSearch from "@/app/assets/icons/search.svg";
 
 export default function Header() {
   return (
-    <nav className="flex flex-col items-center justify-center relative overflow-hidden bg-white p-4 gap-4 max-w-[1440px] m-auto">
+    <nav className="flex flex-col items-center justify-center relative overflow-hidden bg-white p-4 gap-4 max-w-[1440px] m-auto font-satoshi">
       <div className="flex flex-row justify-between items-center w-full gap-2 py-4 md:border-b">
         <LoginLink title="Login">
           <IconUserAvartar />
