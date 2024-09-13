@@ -2,14 +2,18 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center rounded-md border px-4 py-2.5 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+  [
+    "inline-flex items-center justify-center rounded-none px-8 py-4 text-body-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50",
+  ],
   {
     variants: {
       variant: {
         primary:
           "border-primary bg-primary text-white hover:bg-dark-primary focus:ring-primary",
         secondary:
-          "border-gray-300 bg-white hover:bg-gray-100 focus:ring-gray-300",
+          "border-border-gray bg-light-grey hover:bg-border-gray focus:border-primary focus:ring-primary",
+        opaque:
+          "border-none bg-light-grey/15 text-white hover:bg-light-grey/30 focus:ring-primary",
       },
     },
     defaultVariants: {

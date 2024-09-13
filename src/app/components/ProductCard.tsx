@@ -28,14 +28,14 @@ export default function ProductCard({
   price,
 }: ProductCardProps): JSX.Element {
   return (
-    <article className="relative flex flex-col items-start justify-start gap-6">
+    <article className="relative flex flex-col items-start justify-start gap-6 transition-all duration-300 hover:scale-[102%]">
       {/* Display the product image */}
       <Image
         alt={alt}
         src={imageSrc}
-        width={300}
-        height={300}
-        className="object-cover"
+        width={610}
+        height={750}
+        className="aspect-[610/750] h-auto w-full object-cover"
       />
       <div className="flex flex-col items-start justify-start gap-2">
         {/* Display the product title */}
