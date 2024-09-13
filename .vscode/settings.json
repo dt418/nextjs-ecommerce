@@ -1,6 +1,20 @@
 {
     "editor.formatOnSave": true,
+    "eslint.format.enable": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript",
+        "typescriptreact",
+        "javascriptreact"
+    ],
+    "eslint.nodePath": "./node_modules/eslint",
     "[prisma]": {
         "editor.defaultFormatter": "Prisma.prisma"
     },
+    "editor.wordWrap": "on",
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

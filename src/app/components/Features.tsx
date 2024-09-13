@@ -12,11 +12,11 @@ import IconSprout from "@/app/assets/icons/sprout.svg";
  */
 function Features() {
   return (
-    <section className="flex flex-col w-full max-w-[1440px] relative bg-white p-6 md:p-20 gap-9">
-      <h3 className="block text-center text-2xl text-[#2a254b]">
+    <section className="relative flex w-full max-w-[1440px] flex-col gap-9 bg-white p-6 md:p-20">
+      <h3 className="block text-center font-clash-display text-2xl text-[#2a254b]">
         What makes our brand different
       </h3>
-      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+      <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <li className="grid">
           <FeatureCard
             icon={<IconDelivery className="size-6" />}

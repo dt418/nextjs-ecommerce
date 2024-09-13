@@ -6,8 +6,8 @@ import IconSearch from "@/app/assets/icons/search.svg";
 
 export default function Header() {
   return (
-    <nav className="flex flex-col items-center justify-center relative overflow-hidden bg-white p-4 gap-4 max-w-[1440px] m-auto font-satoshi">
-      <div className="flex flex-row justify-between items-center w-full gap-2 py-4 md:border-b">
+    <nav className="relative m-auto flex max-w-[1440px] flex-col items-center justify-center gap-4 overflow-hidden bg-white p-4 font-satoshi">
+      <div className="flex w-full flex-row items-center justify-between gap-2 py-4 md:border-b">
         <LoginLink title="Login">
           <IconUserAvartar />
         </LoginLink>
@@ -19,11 +19,11 @@ export default function Header() {
           <IconSearch />
         </div>
       </div>
-      <ul className="justify-start items-start gap-11 hidden md:flex">
+      <ul className="hidden items-start justify-start gap-11 md:flex">
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Plant pots
           </Link>
@@ -31,7 +31,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Ceramics
           </Link>
@@ -39,7 +39,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Tables
           </Link>
@@ -47,7 +47,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Chairs
           </Link>
@@ -55,7 +55,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Crockery
           </Link>
@@ -63,7 +63,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Tableware
           </Link>
@@ -71,7 +71,7 @@ export default function Header() {
         <li>
           <Link
             href={"#"}
-            className="flex-grow-0 flex-shrink-0 text-base text-left text-[#726e8d]"
+            className="shrink-0 grow-0 text-left text-base text-[#726e8d]"
           >
             Cutlery
           </Link>

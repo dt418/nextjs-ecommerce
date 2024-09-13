@@ -9,20 +9,20 @@ import React from "react";
  */
 function HeroBlock() {
   return (
-    <section className="flex max-w-[1440px] relative overflow-hidden bg-[url('hero-block.webp')] bg-cover bg-no-repeat bg-center justify-end md:h-full items-center md:py-[130px] sm:pb-[50%] pb-[75%]">
-      <div className="flex flex-col md:max-w-[630px] overflow-hidden bg-white/75 p-6 md:px-14 md:py-12 m-0 md:mr-[80px] gap-8">
+    <section className="relative flex max-w-[1440px] items-center justify-end overflow-hidden bg-[url('hero-block.webp')] bg-cover bg-center bg-no-repeat pb-[75%] sm:pb-[50%] md:h-full md:py-[130px]">
+      <div className="m-0 flex flex-col gap-8 overflow-hidden bg-white/75 p-6 md:mr-[80px] md:max-w-[630px] md:px-14 md:py-12">
         <div className="flex flex-col justify-start gap-5">
-          <h2 className="text-headline-two text-left text-[#22202e] font-clash-display">
+          <h2 className="text-left font-clash-display text-headline-two text-[#22202e]">
             Luxury homeware for people who love timeless design quality
           </h2>
-          <p className="text-lg text-left text-[#5b5676]">
+          <p className="text-left text-lg text-[#5b5676]">
             Shop the new Spring 2022 collection today
           </p>
         </div>
         <div className="inline-flex md:mt-[160px]">
           <Link
             href="/collections"
-            className="text-base text-left text-[#2a254b] p-4 bg-light-grey"
+            className="bg-light-grey p-4 text-left text-base text-[#2a254b]"
           >
             View collection
           </Link>

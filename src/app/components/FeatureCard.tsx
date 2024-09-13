@@ -14,15 +14,15 @@ type FeatureCardProps = {
  */
 function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
-    <div className="flex flex-col gap-3 p-12 bg-light-grey">
+    <div className="flex flex-col gap-3 bg-light-grey p-12">
       {/* Display the icon of the feature */}
       {icon}
       {/* Display the title of the feature */}
-      <h4 className="text-headline-four text-left text-[#2a254b] font-clash-display">
+      <h4 className="text-left font-clash-display text-headline-four text-[#2a254b]">
         {title}
       </h4>
       {/* Display the description of the feature */}
-      <p className="text-balance text-base text-left text-[#2a254b]">
+      <p className="text-balance text-left text-base text-[#2a254b]">
         {description}
       </p>
     </div>

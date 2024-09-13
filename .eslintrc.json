@@ -1,3 +1,31 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:tailwindcss/recommended"
+  ],
+  "settings": {
+    "tailwindcss": {
+      // These are the default values but feel free to customize
+      "callees": [
+        "classnames",
+        "clsx",
+        "cn",
+        "cva"
+      ],
+      "config": "tailwind.config.ts", // returned from `loadConfig()` utility if not provided
+      "cssFiles": [
+        "**/*.css",
+        "!**/node_modules",
+        "!**/.*",
+        "!**/dist",
+        "!**/build"
+      ],
+      "cssFilesRefreshRate": 5000,
+      "removeDuplicates": true,
+      "skipClassAttribute": false,
+      "whitelist": [],
+      "tags": [], // can be set to e.g. ['tw'] for use in tw`bg-blue`
+      "classRegex": "^class(Name)?$" // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
+    }
+  }
 }

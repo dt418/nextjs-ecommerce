@@ -10,14 +10,14 @@ import LogoTwitter from "@/app/assets/icons/logo--twitter.svg";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col max-w-[1440px] relative overflow-hidden bg-[#2a254b] mx-auto p-4 gap-y-4 divide-y-2 divide-primary">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          <ul className="flex flex-col justify-start items-start gap-3">
+    <footer className="relative mx-auto flex max-w-[1440px] flex-col gap-y-4 divide-y-2 divide-primary overflow-hidden bg-[#2a254b] p-4">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <ul className="flex flex-col items-start justify-start gap-3">
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-base text-left text-white"
+                className="shrink-0 grow-0 text-left text-base text-white"
               >
                 Menu
               </Link>
@@ -25,7 +25,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 New arrivals
               </Link>
@@ -33,7 +33,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Best sellers
               </Link>
@@ -41,7 +41,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Recently viewed
               </Link>
@@ -49,7 +49,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Popular this week
               </Link>
@@ -57,17 +57,17 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 All products
               </Link>
             </li>
           </ul>
-          <ul className="flex flex-col justify-start items-start gap-3">
+          <ul className="flex flex-col items-start justify-start gap-3">
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-base text-left text-white"
+                className="shrink-0 grow-0 text-left text-base text-white"
               >
                 Categories
               </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Crockery
               </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Furniture
               </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Homeware
               </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Plant pots
               </Link>
@@ -107,7 +107,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Chairs
               </Link>
@@ -115,17 +115,17 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Crockery
               </Link>
             </li>
           </ul>
-          <ul className="flex flex-col justify-start items-start gap-3">
+          <ul className="flex flex-col items-start justify-start gap-3">
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-base text-left text-white"
+                className="shrink-0 grow-0 text-left text-base text-white"
               >
                 Our company
               </Link>
@@ -133,7 +133,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 About us
               </Link>
@@ -141,7 +141,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Vacancies
               </Link>
@@ -149,7 +149,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Contact us
               </Link>
@@ -157,7 +157,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Privacy
               </Link>
@@ -165,7 +165,7 @@ export default function Footer() {
             <li>
               <Link
                 href="#"
-                className="flex-grow-0 flex-shrink-0 text-sm text-left text-white"
+                className="shrink-0 grow-0 text-left text-sm text-white"
               >
                 Returns policy
               </Link>
@@ -173,24 +173,24 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex flex-col gap-4">
-          <p className="text-base text-left text-white">
+          <p className="text-left text-base text-white">
             Join our mailing list
           </p>
-          <div className="flex justify-start items-start">
+          <div className="flex items-start justify-start">
             <input
               type="email"
               placeholder="your-email@example.com"
-              className="p-4 bg-white/15 text-base text-left text-white w-full inline-block ring ring-inset ring-primary/15"
+              className="inline-block w-full bg-white/15 p-4 text-left text-base text-white ring ring-inset ring-primary/15"
             />
-            <button className="inline-flex flex-shrink-0 flex-grow-0 text-base text-left text-[#2a254b] cursor-pointer px-8 py-4 bg-white">
+            <button className="inline-flex shrink-0 grow-0 cursor-pointer bg-white px-8 py-4 text-left text-base text-[#2a254b]">
               Sign up
             </button>
           </div>
         </div>
       </div>
       <div className="flex justify-between py-4">
-        <p className="text-sm text-left text-white">Copyright 2022 Avion LTD</p>
-        <ul className="flex justify-start items-start text-white">
+        <p className="text-left text-sm text-white">Copyright 2022 Avion LTD</p>
+        <ul className="flex items-start justify-start text-white">
           <li>
             <Link href="#">
               <LogoLinkedIn className="size-6" />
