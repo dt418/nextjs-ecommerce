@@ -35,9 +35,6 @@ const config = {
         "body-medium": ["16px", { lineHeight: "1.5" }],
         "body-large": ["18px", { lineHeight: "1.5" }],
       },
-      backgroundImage: {
-        "email-signup": "url('/assets/images/email-signup.webp')",
-      },
     },
   },
   plugins: [],

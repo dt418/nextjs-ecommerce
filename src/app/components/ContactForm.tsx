@@ -4,9 +4,9 @@ function ContactForm() {
       <div className="flex max-w-[1440px] flex-col justify-center gap-6 overflow-hidden bg-[url('assets/images/contact-form/email_sign_up.webp')] p-6 md:py-[86px]">
         <div className="flex flex-col items-center justify-start gap-[30px]">
           <div className="relative flex flex-col items-center justify-start gap-3">
-            <p className="text-center text-[32px] text-white">
+            <h2 className="text-center font-clash-display text-headline-two text-white">
               Join the club and get the benefits
-            </p>
+            </h2>
             <p className="text-center text-lg text-white">
               Sign up for our newsletter and receive exclusive offers on new
               ranges, sales, pop up stores and more
@@ -88,16 +88,20 @@ function ContactForm() {
             </div>
           </div>
         </div>
-        <div className="flex w-full max-w-[484px] items-start justify-start self-center ">
+        <form className="flex w-full max-w-[484px] items-start justify-start self-center ">
           <input
             type="email"
+            name="email"
             placeholder="your-email@example.com"
             className="inline-block w-full bg-light-grey p-4 text-left text-base text-dark-primary ring ring-inset ring-primary/15 placeholder:text-dark-primary/20"
           />
-          <button className="inline-flex shrink-0 grow-0 cursor-pointer bg-dark-primary px-8 py-4 text-left text-base text-white ring-2 ring-inset ring-primary/15 hover:bg-[#1E193E] focus:border-primary">
+          <button
+            className="inline-flex shrink-0 grow-0 cursor-pointer bg-dark-primary px-8 py-4 text-left text-base text-white ring-2 ring-inset ring-primary/15 hover:bg-[#1E193E] focus:border-primary"
+            type="submit"
+          >
             Sign up
           </button>
-        </div>
+        </form>
       </div>
     </section>
   );

@@ -28,15 +28,17 @@ export default function ProductCard({
   price,
 }: ProductCardProps): JSX.Element {
   return (
-    <article className="relative flex flex-col items-start justify-start gap-6 transition-all duration-300 hover:scale-[102%]">
-      {/* Display the product image */}
-      <Image
-        alt={alt}
-        src={imageSrc}
-        width={610}
-        height={750}
-        className="aspect-[610/750] h-auto w-full object-cover"
-      />
+    <article className="group relative flex max-h-full flex-col items-start justify-start gap-6 overflow-hidden transition-transform duration-500 ease-in-out will-change-transform">
+      {/* Wrap the image with a div that applies group-hover */}
+      <div className="overflow-hidden">
+        <Image
+          alt={alt}
+          src={imageSrc}
+          width={610}
+          height={750}
+          className="aspect-[610/750] h-auto w-full object-cover transition-transform duration-500 ease-in-out will-change-transform group-hover:scale-110"
+        />
+      </div>
       <div className="flex flex-col items-start justify-start gap-2">
         {/* Display the product title */}
         <h4 className="text-left text-headline-four text-dark-primary">

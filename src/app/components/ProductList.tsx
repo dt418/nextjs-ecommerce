@@ -5,14 +5,14 @@ import { Button } from "./Button";
 function ProductList() {
   return (
     <section className="relative flex w-full max-w-[1440px] flex-col gap-4 overflow-hidden px-6 md:gap-12 md:px-20 md:pb-10 md:pt-7">
-      <h3 className="block text-center font-clash-display text-2xl text-[#2a254b]">
+      <h3 className="block text-center font-clash-display text-headline-three text-[#2a254b]">
         New products
       </h3>
-      <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <ul className="grid grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-4">
         <li>
           <ProductCard
             imageSrc="/assets/images/products/product_card_1.webp"
-            alt="Product card 1 image"
+            alt="The Dandy chair image"
             title="The Dandy chair"
             price={250}
           />
@@ -20,25 +20,25 @@ function ProductList() {
         <li>
           <ProductCard
             imageSrc="/assets/images/products/product_card_2.webp"
-            alt="Product card 1 image"
-            title="The Dandy chair"
+            alt="Rustic Vase Set image"
+            title="Rustic Vase Set"
             price={115}
           />
         </li>
         <li>
           <ProductCard
             imageSrc="/assets/images/products/product_card_3.webp"
-            alt="Product card 1 image"
-            title="The Dandy chair"
-            price={399.99}
+            alt="The Silky Vase image"
+            title="The Silky Vase"
+            price={125}
           />
         </li>
         <li>
           <ProductCard
             imageSrc="/assets/images/products/product_card_4.webp"
-            alt="Product card 1 image"
-            title="The Dandy chair"
-            price={399.99}
+            alt="The Lucy Lamp image"
+            title="The Lucy Lamp"
+            price={399}
           />
         </li>
       </ul>
