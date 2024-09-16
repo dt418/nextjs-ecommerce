@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <div className="flex min-h-[50svh] flex-col items-center justify-center bg-white py-8 text-gray-800">
+    <section className="flex min-h-[50svh] flex-col items-center justify-center bg-white py-8 text-gray-800">
       <h1 className="mb-4 text-9xl font-bold">404</h1>
       <p className="mb-8 font-clash-display text-xl">Page Not Found</p>
       <Link
@@ -11,6 +11,6 @@ export default function NotFound() {
       >
         Go Back Home
       </Link>
-    </div>
+    </section>
   );
 }
