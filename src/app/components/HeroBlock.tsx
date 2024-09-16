@@ -21,7 +21,7 @@ function HeroBlock() {
         </div>
         <div className="inline-flex md:mt-[160px]">
           <Link
-            href="/collections"
+            href="/products"
             className="bg-light-grey p-4 text-left text-base text-[#2a254b]"
           >
             View collection
